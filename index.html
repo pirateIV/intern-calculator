@@ -1,0 +1,55 @@
+<!--  -->
+<!-- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       h1{
+        font-family: Cambria Math;
+       } 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <input type="text" id="numOne" >
+        <input type="text" id="operator" >
+        <input type="text" id="numTwo">
+    </div>
+    <div class="btn">
+        <button id="btn">Calculate</button>
+    </div>
+    <h1 class="result"></h1>
+
+    
+    <script>
+        const operator = document.getElementById("operator");
+        let numOne = document.getElementById("numOne")
+        let numTwo= document.getElementById("numTwo")
+        const displayResult = document.querySelector('.result')
+
+        document.getElementById('btn').addEventListener('click', calculate);
+
+        function calculate(){
+            
+            if(operator.value == '-'){
+                displayResult.innerText = numOne.value - numTwo.value;
+            }else if(operator.value === '+'){
+                displayResult.innerText = Number(numOne.value) + Number(numTwo.value);
+            }else if(operator.value == '*'){
+                displayResult.innerText =  numOne.value * numTwo.value;
+            }
+            else if(operator.value === '/'){
+                displayResult.innerText = numOne.value / numTwo.value;
+            }
+            console.log('calculated')
+        }
+    </script>
+</body>
+</html>
