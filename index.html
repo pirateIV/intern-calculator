@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="./css/style.css">
     <style>
        h1{
         font-family: Cambria Math;
@@ -16,6 +17,8 @@
     </style>
 </head>
 <body>
+
+    <h1>Input Calculator</h1>
 
     <div class="container">
         <input type="text" id="numOne" >
@@ -27,29 +30,6 @@
     </div>
     <h1 class="result"></h1>
 
-    
-    <script>
-        const operator = document.getElementById("operator");
-        let numOne = document.getElementById("numOne")
-        let numTwo= document.getElementById("numTwo")
-        const displayResult = document.querySelector('.result')
-
-        document.getElementById('btn').addEventListener('click', calculate);
-
-        function calculate(){
-            
-            if(operator.value == '-'){
-                displayResult.innerText = numOne.value - numTwo.value;
-            }else if(operator.value === '+'){
-                displayResult.innerText = Number(numOne.value) + Number(numTwo.value);
-            }else if(operator.value == '*'){
-                displayResult.innerText =  numOne.value * numTwo.value;
-            }
-            else if(operator.value === '/'){
-                displayResult.innerText = numOne.value / numTwo.value;
-            }
-            console.log('calculated')
-        }
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

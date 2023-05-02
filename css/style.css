@@ -1,0 +1,31 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-color: #333;
+}
+.container {
+    display: flex;
+    width: 300px;
+    gap: 10px;
+    margin: 50px auto 100px;
+    flex-direction: column;
+}
+.container *{
+    width: 300px;
+    padding: 9px;
+}
+.container #inoutOne{
+    display: ;
+}
+.btn #btn{
+    width: 170px;
+    display: grid;
+    margin: auto;
+    padding: 9px;
+    font-size: 20px;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
